@@ -18,7 +18,7 @@ resource "aws_instance" "web" {
   }
 }
 
-# Create S3 bucket
+/*# Create S3 bucket
 resource "aws_s3_bucket" "example" {
   bucket = "my-tf-test-bucket124"
 
@@ -26,4 +26,4 @@ resource "aws_s3_bucket" "example" {
     Name        = "My bucket"
     Environment = "Dev"
   }
-}
+}*/
