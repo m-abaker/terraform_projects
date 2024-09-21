@@ -15,7 +15,7 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region = "us-east-1"
-  profile = "ass5"
+  #profile = "ass5"
 }
 
 #############################################################################
