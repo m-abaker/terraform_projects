@@ -11,7 +11,7 @@
 # Create EC2 
 resource "aws_instance" "web" {
   ami           = "ami-0e86e20dae9224db8"
-  instance_type = "t3.micro"
+  instance_type = "t3.large"
 
 #  tags = {
  #   Name = "HelloWorld"
