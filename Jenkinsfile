@@ -4,7 +4,7 @@ node {
         try{
             sh'echo "build stage"'
         }
-        catsh(Exception e){
+        catch(Exception e){
             sh'echo "exception found"'
             throw e
         }
