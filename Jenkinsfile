@@ -10,6 +10,7 @@ node {
         }
     }
     stage('test'){
+        sh'echo 'env.BRANCH_NAME''
         if (env.BRANCH_NAME == "main"){
             sh'echo "test stage"'
         }
