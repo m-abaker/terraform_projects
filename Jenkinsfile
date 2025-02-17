@@ -13,7 +13,7 @@ node {
         script {
             def branchName = env.BRANCH_NAME ?: 'main' // Default to 'main' if null
             sh "echo 'Branch Name: ${branchName}'"
-            if (branchName == "main"){
+            if (branchName == "feaT"){
                 sh'echo "test stage"'
             }
             else{
