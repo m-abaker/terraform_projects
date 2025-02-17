@@ -10,13 +10,16 @@ node {
         }
     }
     stage('test'){
-        sh'echo 'env.BRANCH_NAME''
-        if (env.BRANCH_NAME == "main"){
-            sh'echo "test stage"'
-        }
-        else{
-            sh'echo "skip test stage"'
-        }
+        script {
+            def branchName = env.BRANCH_NAME ?: 'main' // Default to 'main' if null
+            sh "echo 'Branch Name: ${branchName}'"
+            if (branchName == "main"){
+                sh'echo "test stage"'
+            }
+            else{
+                sh'echo "skip test stage"'
+            }
 
+        }
     }
 }
