@@ -11,7 +11,7 @@ node {
     }
     stage('test'){
         if (env.BRANCH_NAME == "feat"){
-            sh'echo "test stage"'
+            sh'echo "test stage"'main
         }
         else{
             sh'echo "skip test stage"'
