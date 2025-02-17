@@ -10,8 +10,8 @@ node {
         }
     }
     stage('test'){
-        if (env.BRANCH_NAME == "feat"){
-            sh'echo "test stage"'main
+        if (env.BRANCH_NAME == "main"){
+            sh'echo "test stage"'
         }
         else{
             sh'echo "skip test stage"'
