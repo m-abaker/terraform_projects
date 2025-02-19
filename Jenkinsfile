@@ -8,7 +8,7 @@ pipeline{
                 }
             }
         }
-        stage('test){
+        stage('test'){
             steps{
                 script{
                     echo "test in progress"
